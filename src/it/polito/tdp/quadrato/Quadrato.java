@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Quadrato {
 	
-	private int size ;
-	private List<Integer> mappa ;
+	private int size ; // lato del quadrato
+	private List<Integer> mappa ; // lista dei numeri interi del quadrato
 	private int size2, sommaMagica ;
 	
 	public Quadrato(int size) {

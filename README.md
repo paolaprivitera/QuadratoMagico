@@ -21,6 +21,7 @@ Nota: il valore delle somme sarà
 ```
 
 ## Approccio 1: ad ogni livello `L` della ricorsione, scelgo quale valore inserire nella casella `L`
+Con la ricorsione genero tutti i quadrati e poi controllo se le somme sono uguali affinche' si possa avere un quadrato magico.
 
 L=0
 
@@ -30,7 +31,7 @@ L=0
  X X X
 ```
 
- L=1
+ L=1  /* Ad ogni livello che scendo, mi sposto di una casella */
  
 ```
 	 4 8 X 
@@ -39,19 +40,19 @@ L=0
 ```
 
 ```
-1
-	2
-		3
+1 (Procedura di livello 1)
+	2 (Procedura di livello 2)
+		3 (Procedura di livello 3)
 			4
 				6
-					7
-						8
-							9 -> NO
-						9
+					7 (Procedura di livello 7)
+						8 (Procedura di livello 8)
+							9 -> NO (Procedura di livello 9)
+						9 (Procedura di livello 8)
 							8 -> NO
-					8
+					8 (Procedura di livello 7)
 						7
-							8 -> NO
+							9 -> NO
 						9
 							7 -> NO
 					9
